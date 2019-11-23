@@ -35,7 +35,7 @@ class App extends React.Component {
     const per = { ...this.state.Person[personIndex] };
     per.name = event.target.value;
 
-    const persons = { ...this.state.Person };
+    const persons = [...this.state.Person];
 
     persons[personIndex] = per;
 
