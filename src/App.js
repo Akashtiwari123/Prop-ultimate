@@ -75,8 +75,8 @@ class App extends React.Component {
                   name={event.name}
                   age={event.age}
                   key={event.id}
-                  change={event => {
-                    this.HandleNameChange(event, event.id);
+                  change={ev => {
+                    this.HandleNameChange(ev, event.id);
                   }}
                 />
               );
